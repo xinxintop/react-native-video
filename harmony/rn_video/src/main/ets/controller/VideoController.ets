@@ -194,7 +194,7 @@ export class VideoController {
         case AvplayerStatus.INITIALIZED:
           if (this.playerThis.disableFocus) {
             let audioRendererInfo = {
-              usage: audio.StreamUsage.STREAM_USAGE_GAME,
+              usage: audio.StreamUsage.STREAM_USAGE_MEDIA,
               rendererFlags: 0
             } as audio.AudioRendererInfo;
             this.avPlayer.audioRendererInfo = audioRendererInfo;
